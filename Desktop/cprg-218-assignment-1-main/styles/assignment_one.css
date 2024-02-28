@@ -1,0 +1,30 @@
+
+.card-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 100%; 
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    width: 48%; 
+  }
+
+  @media (min-width: 1200px) {
+    width: 31%; 
+  }
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; 
+}
+
+

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="/styles/fonts.css">
+  <link rel="stylesheet" type="text/css" href="/styles/global.css">
+  <link rel="stylesheet" type="text/css" href="styles/assignment-one-starter.css">
+  <link rel="stylesheet" href="styles/assignment_one.css">
+  <link rel="stylesheet" type="text/css" href="styles/lab_three.css">
+  <title>Responsive CSS Layout</title>
+</head>
+<body>
+  <div class="header-container">
+    <h1>Assignment 1</h1>
+    <h2>Responsive CSS Layout</h2>
+  </div>
+  <section class="container">
+    <ul class="card-container">
+      <li class="card">
+        <img src="assets/pictures/deepak-nautiyal-Nbv7PkL_rvI-unsplash.jpg" alt="Plumbeous Water Redstart">
+        <div class="card-content">
+          <h3 class="subheader">
+            Birds
+          </h3>
+          <h4 class="header">
+            Plumbeous Water Redstart
+          </h4>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="assets/pictures/dusan-veverkolog-ah7KHxYg6Ow-unsplash.jpg" alt="Meerkats">
+        <div class="card-content">
+          <h3 class="subheader">
+            Animals
+          </h3>
+          <h4 class="header">
+            Meerkats
+          </h4>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="assets/pictures/geranimo-bKhETeDV1WM-unsplash.jpg" alt="Squirrel">
+        <div class="card-content">
+          <h3 class="subheader">
+            Animals
+          </h3>
+          <h4 class="header">
+            Squirrel
+          </h4>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="assets/pictures/karsten-winegeart-oU6KZTXhuvk-unsplash.jpg" alt="dog">
+        <div class="card-content">
+          <h3 class="subheader">
+            Animals
+          </h3>
+          <h4 class="header">
+            Dog
+          </h4>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="assets/pictures/laura-college-K_Na5gCmh38-unsplash.jpg" alt="deer">
+        <div class="card-content">
+          <h3 class="subheader">
+            Animals
+          </h3>
+          <h4 class="header">
+            Deer
+          </h4>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="assets/pictures/lukas-souza-vjFC9OjrOtA-unsplash.jpg" alt="Doucan">
+        <div class="card-content">
+          <h3 class="subheader">
+            Birds
+          </h3>
+          <h4 class="header">
+            Doucan
+          </h4>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="assets/pictures/mark-stoop-JAUFHzqZPd0-unsplash.jpg" alt="Lizard">
+        <div class="card-content">
+          <h3 class="subheader">
+            Animals
+          </h3>
+          <h4 class="header">
+            Lizard
+          </h4>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="assets/pictures/ray-hennessy-mpw37yXc_WQ-unsplash.jpg" alt="Atlantic puffin">
+        <div class="card-content">
+          <h3 class="subheader">
+            Birds
+          </h3>
+          <h4 class="header">
+            Altantic puffin
+          </h4>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="assets/pictures/ricardo-frantz-GvyyGV2uWns-unsplash.jpg" alt="Peacock">
+        <div class="card-content">
+          <h3 class="subheader">
+            Birds
+          </h3>
+          <h4 class="header">
+            Peacock
+          </h4>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4p68-lMrjYU?autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="overlay" onclick="playVideo()">
+      <p>Click to play</p>
+    </div>
+    <div class="video-description">
+      <h3>Video Title</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis deserunt esse veniam hic odit. Praesentium amet, consequatur modi, ea aliquam minus similique doloribus deserunt ipsum, reprehenderit vel velit. Corporis, nesciunt.</p>
+    </div>
+    <div class="video-link">
+      <a href="https://www.youtube.com/watch?v=4p68-lMrjYU" target="_blank">Watch on YouTube</a>
+    </div>
+  
+    <script>
+      function playVideo() {
+        var iframe = document.querySelector('.video-container iframe');
+        iframe.src += "&autoplay=1";  
+        document.querySelector('.overlay').style.display = 'none';  
+      }
+    </script>
+  </div>
+  
+  </div>
+  
+
+
+
+</body>
+</html>
